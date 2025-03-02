@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 1.7rem;
+    align-self: normal;
+}
+
+h3{
+    align-self: normal;
+}
+
+body{
+    font-family: 'courier', sans-serif;    
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+header{
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px; /* Ajusta según tu diseño */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 1.5rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.card p{
+    padding-top: 1rem;
+}
+
+.profile-image{
+    width: 50%;
+    height: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* 100% de la pantalla menos la altura del nav */
+}
+
+#about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh; /* 100% de la pantalla menos la altura del nav */
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    width: 100%;
+}
+
+.social-icons a{
+    text-decoration: none;   
+}
+
+.social-icons a img{
+    width: 30px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+button{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 50%;
+    white-space: nowrap;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img{
+    width: 80%;
+    height: auto;
+}
