@@ -8,13 +8,18 @@ html {
     scroll-behavior: smooth;
 }
 
-h1{
-    font-size: 1.7rem;
+.h1-title{
+    font-size: 3.2rem;
     align-self: normal;
 }
 
-h3{
+.h3-title{
+    font-size: 2rem;
     align-self: normal;
+}
+
+.section-title{
+    font-size: 5rem;
 }
 
 body{
@@ -124,7 +129,6 @@ button{
     background-color: white;
     color: black;
     font-weight: bold;
-    width: 50%;
     white-space: nowrap;
 }
 .btns{
