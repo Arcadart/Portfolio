@@ -154,3 +154,17 @@ button{
 i{
     padding: 1rem;
 }
+
+.email{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.email a{
+    color: black;
+}
+
+.arrow{
+    transform: rotate(270deg);
+}
