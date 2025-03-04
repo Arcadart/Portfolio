@@ -74,9 +74,9 @@ ul a{
 }
 
 section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     align-items: center;
     height: 100vh; /* 100% de la pantalla menos la altura del nav */
 }
@@ -151,10 +151,6 @@ button{
     height: auto;
 }
 
-i{
-    padding: 1rem;
-}
-
 .email{
     font-size: 2rem;
     font-weight: bold;
@@ -167,4 +163,10 @@ i{
 
 .arrow{
     transform: rotate(270deg);
+}
+
+.icons-skills{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 2rem;
 }
