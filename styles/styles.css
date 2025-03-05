@@ -80,24 +80,7 @@ ul a{
 section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* 100% de la pantalla menos la altura del nav */
-}
-
-#about{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100vh; /* 100% de la pantalla menos la altura del nav */
-}
-
-aside{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
+    height: 100vh;
 }
 
 .social-icons{
@@ -127,7 +110,7 @@ aside{
 
 button{
     padding: 10px;
-    margin: 10px;
+    margin-top: 10px;
     border: 1px solid black;
     border-radius: 10px;
     background-color: white;
@@ -138,8 +121,7 @@ button{
 .btns{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
 }
 
 .profile-image{
