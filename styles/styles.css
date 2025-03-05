@@ -13,7 +13,7 @@ p{
 }
 
 .h1-title{
-    font-size: 3.2rem;
+    font-size: 2.7rem;
     align-self: normal;
 }
 
@@ -34,16 +34,17 @@ body{
 
 header{
     position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 60px; /* Ajusta según tu diseño */
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Ajusta según tu diseño */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
     padding-left: 100px;
     padding-right: 100px;
+    backdrop-filter: blur(8px);
 }
 
 ul{
@@ -64,22 +65,18 @@ ul a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 100%;
 }
 
 .card p{
     padding-top: 1rem;
 }
 
-.profile-image{
-    width: 50%;
-    height: 100%;
-}
 
 section{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
@@ -105,12 +102,10 @@ section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80%;
 }
 
 button{
     padding: 10px;
-    margin-top: 10px;
     border: 1px solid black;
     border-radius: 10px;
     background-color: white;
@@ -121,11 +116,18 @@ button{
 .btns{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.btns a{
+    text-decoration: none;
+    color: black;
 }
 
 .profile-image{
-    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -133,7 +135,7 @@ button{
 }
 
 .profile-image img{
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
