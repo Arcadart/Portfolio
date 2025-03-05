@@ -137,10 +137,6 @@ button{
     height: auto;
 }
 
-i{
-    padding: 1rem;
-}
-
 .email{
     font-size: 2rem;
     font-weight: bold;
@@ -153,4 +149,10 @@ i{
 
 .arrow{
     transform: rotate(270deg);
+}
+
+.icons-skills{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 2rem;
 }
