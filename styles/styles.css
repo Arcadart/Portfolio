@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+p{
+    font-weight: bold;
+}
+
 .h1-title{
     font-size: 3.2rem;
     align-self: normal;
