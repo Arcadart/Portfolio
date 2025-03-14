@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+nav ul li:hover{
+    animation: headShake 1s;
+}
+
 p{
     font-weight: bold;
 }
@@ -44,7 +48,7 @@ header{
     z-index: 1000;
     padding-left: 100px;
     padding-right: 100px;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(50px);
 }
 
 ul{
@@ -135,7 +139,7 @@ button{
 }
 
 .profile-image img{
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 

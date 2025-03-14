@@ -3,9 +3,16 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentSection = 0;
     let isScrolling = false;
 
-    window.addEventListener('wheel', function(event) {
+    const debounce = (func, wait) => {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    };
+
+    const handleScroll = debounce(function(event) {
         if (isScrolling) return;
-        isScrolling = true;
 
         if (event.deltaY > 0) {
             // Scroll down
@@ -15,10 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
             currentSection = Math.max(currentSection - 1, 0);
         }
 
+        isScrolling = true;
         sections[currentSection].scrollIntoView({ behavior: 'smooth' });
 
-        setTimeout(() => {
+        sections[currentSection].addEventListener('scrollend', function() {
             isScrolling = false;
-        }, 1000); // Adjust the timeout duration as needed
-    });
+        }, { once: true });
+    }, 100);
+
+    window.addEventListener('wheel', handleScroll);
 });
