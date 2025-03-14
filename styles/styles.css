@@ -1,3 +1,9 @@
+:root{
+    --blackfont: #000000;
+    --whitefont: #ffffff;
+    --blackbg: #000000;
+    --whitebg: #ffffff;
+}
 *{
     margin: 0;
     padding: 0;
