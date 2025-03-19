@@ -9,7 +9,6 @@ html {
 }
 
 .dark-mode{
-    scroll-behavior: smooth;
     background-color: black;
     color: white;
 }
